@@ -18,12 +18,14 @@ services:
   # "sleep infinity" porque, por ora, nao ha uma aplicacao (Streamlit)
   # para manter em primeiro plano -- o trabalho e feito via terminal
   # (ingestao, scripts, etc.).
-  app:
+app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: rag_app
-    env_file: .env
+    env_file:
+      - path: .env
+        required: false
     environment:
       QDRANT_HOST: qdrant
     volumes:
