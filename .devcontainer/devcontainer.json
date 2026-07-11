@@ -1,0 +1,22 @@
+{
+  "name": "rag-app-dev",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [6333, 6334],
+  "portsAttributes": {
+    "6333": { "label": "Qdrant HTTP" },
+    "6334": { "label": "Qdrant gRPC" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": "uv sync"
+}

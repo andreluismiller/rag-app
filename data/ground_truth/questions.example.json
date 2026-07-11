@@ -1,0 +1,7 @@
+[
+  {
+    "question": "Exemplo de pergunta sobre o dataset?",
+    "expected_answer": "Exemplo de resposta esperada.",
+    "relevant_chunk_ids": ["doc1"]
+  }
+]

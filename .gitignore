@@ -1,0 +1,22 @@
+# Ambiente e segredos
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# uv
+.python-version
+
+# Dados gerados/pesados (mantenha apenas o que faz sentido versionar)
+data/processed/*
+!data/processed/.gitkeep
+
+# Notebooks / cache
+.ipynb_checkpoints/
+.ruff_cache/
+.pytest_cache/
+
+# SO / IDE
+.DS_Store
+.vscode/*
+!.vscode/settings.json
